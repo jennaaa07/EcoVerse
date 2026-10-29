@@ -1,0 +1,350 @@
+.main-content{
+    flex:1px;
+    padding:15px;
+    background:#F5F5F5;
+}
+
+.page-title{
+
+    font-size:35px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:5px;
+
+}
+
+.page-subtitle{
+
+    color:#666;
+    font-size:15px;
+    margin-bottom:15px;
+    font-style:italic;
+
+}
+
+
+.profile-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+
+}
+
+.profile-card{
+
+    background:#F9FBE7;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    margin-bottom:30px;
+
+}
+
+.profile-stack{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.details-columns{
+    display:flex;
+    gap:80px;
+}
+
+
+.profile-details{
+
+    padding:15px 40px;
+
+}
+
+.profile-details .row{
+
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    margin-bottom:8px;
+    font-size:15px;
+
+}
+
+.details-columns{
+    display:flex;
+    grid-template-columns:1fr 1fr;
+    gap:0 200px;
+}
+
+.profile-details strong{
+
+    color:#222;
+    min-width:240px;
+    flex-shrink:0;
+
+}
+
+.profile-details span{
+
+    color:#555;
+
+}
+
+.card-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:rgb(200, 221, 168);
+    padding:15px 25px;
+    margin:0 0 20px 0;
+    border-radius:18px 18px 0 0;
+}
+
+.card-header img{
+    width:30px;
+    height:30px;
+    flex-shrink:0;
+}
+
+.card-header h2{
+    margin:0;
+    font-size:24px;
+    color:#222;
+}
+
+
+.status{
+
+    padding:6px 16px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.status.active{
+
+    background:#C8E6C9;
+    color:#2E7D32;
+
+}
+
+
+.edit-btn{
+
+    margin:0;
+    padding:12px 24px;
+    border:none;
+    border-radius:25px;
+    background:#4E944F;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    justify-content:center;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#347C35;
+
+}
+
+.button-group{
+
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    margin:0;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+
+    width:100%;
+    padding:12px 15px;
+    border-radius:10px;
+    border:1px solid #CCC;
+    margin-top:8px;
+    margin-bottom:15px;
+    font-size:14px;
+
+}
+
+input:focus{
+
+    outline:none;
+    border-color:#4E944F;
+    box-shadow:0 0 5px rgba(78,148,79,.3);
+
+}
+
+
+@media(max-width:1000px){
+
+.profile-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.details-columns{
+    grid-template-columns:1fr;
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.profile-details .row{
+
+    flex-direction:column;
+    gap:6px;
+
+}
+
+.audit-table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+}
+
+
+.section-note{
+    padding:0 20px 15px;
+    color:#666;
+    font-style:italic;
+    font-size:14px;
+}
+
+
+.audit-table-wrap{
+    padding:0;
+    background:rgb(200, 221, 168);
+    border-radius:15px;
+    overflow:hidden;
+    margin:0 20px 20px;
+}
+
+.audit-table{
+    width:100%;
+    border-collapse:collapse;
+    background:transparent;
+}
+
+.audit-table th{
+    background:#2E7D32;
+    color:white;
+    padding:16px;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+}
+
+.audit-table td{
+    padding:18px 16px;
+    border-bottom:1px solid #DDD;
+    text-align:center;
+    font-size:14px;
+}
+
+.audit-table tr:hover{
+    background:#d4eea7;
+}
+
+@media(max-width:1000px){
+
+.profile-grid{
+    grid-template-columns:1fr;
+}
+
+.details-columns{
+    grid-template-columns:1fr;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.profile-details .row{
+    flex-direction:column;
+    gap:6px;
+}
+
+.audit-table{
+    display:block;
+    overflow-x:auto;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:100%;
+}
+
+}
+
+
+.profile-card{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.profile-details label{
+    display:block;
+    font-weight:600;
+    color:#333;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-size:14px;
+    text-align:center;
+}
+
+.profile-details input{
+    text-align:center;
+}
+
+.details-columns{
+    justify-content:center;
+}
+
+
+.back-btn{
+
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    margin:10px;
+    text-decoration:none;
+    background:#919f8f;
+    padding:10px;
+    border-radius:20px;
+    color:#1d1d1d;
+    font-weight:600;
+    font-size:14px;
+
+}
+
+.back-btn:hover{
+
+    background:#9cb39c;
+
+}

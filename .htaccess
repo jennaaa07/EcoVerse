@@ -1,0 +1,59 @@
+RewriteEngine On
+
+# Role portal entry aliases used by earlier screens.
+RewriteRule ^GreenReviewer/dashboard\.php$ GreenReviewer/viewerdashboard.php [L]
+RewriteRule ^GuestParticipant/dashboard\.php$ Guest/guestdashboard.php [L]
+
+# Reviewer dashboard links retained from the original prototype.
+RewriteRule ^GreenReviewer/quickpos\.php$ GreenReviewer/pos.php [L]
+RewriteRule ^GreenReviewer/rewarddistribution\.php$ GreenReviewer/distribution.php [L]
+RewriteRule ^GreenReviewer/inventorycontrol\.php$ GreenReviewer/inventory.php [L]
+RewriteRule ^GreenReviewer/streaks\.php$ GreenReviewer/streak.php [L]
+RewriteRule ^GreenReviewer/flashsalesautomation\.php$ GreenReviewer/flashsales.php [L]
+RewriteRule ^GreenReviewer/profile\.php$ GreenReviewer/reviewerprofile.php [L]
+RewriteRule ^GreenReviewer/adjustconversionrates\.php$ GreenReviewer/metrics.php [L]
+RewriteRule ^GreenReviewer/updategoals\.php$ GreenReviewer/metrics.php [L]
+RewriteRule ^GreenReviewer/ecogifting\.php$ GreenReviewer/frauddesk.php [L]
+
+# Participant pages were authored with both HTML and PHP file names. Keep old
+# navigation working while serving the existing PHP pages.
+RewriteRule ^Participant/dashboard\.html$ Participant/dashboard.php [L]
+RewriteRule ^Participant/points\.html$ Participant/points.php [L]
+RewriteRule ^Participant/log-activity\.html$ Participant/logactivity.php [L]
+RewriteRule ^Participant/log_activity\.php$ Participant/logactivity.php [L]
+RewriteRule ^Participant/centre-locator\.html$ Participant/centre_locator.php [L]
+RewriteRule ^Participant/waste-guide\.html$ Participant/wasteguide.php [L]
+RewriteRule ^Participant/store\.html$ Participant/store.php [L]
+RewriteRule ^Participant/community\.html$ Participant/community.php [L]
+RewriteRule ^Participant/profile\.html$ Participant/profile(participant).php [L]
+RewriteRule ^Participant/profile\.php$ Participant/profile(participant).php [L]
+RewriteRule ^Participant/view-forum\.html$ Participant/viewforum.php [L]
+RewriteRule ^Participant/view_forum\.php$ Participant/viewforum.php [L]
+RewriteRule ^Participant/announcement(s)?\.php$ Participant/announcement.php [L]
+RewriteRule ^Participant/announcement\.html$ Participant/announcement.php [L]
+RewriteRule ^Participant/eco-tips\.html$ Participant/eco-tips.php [L]
+RewriteRule ^Participant/zero-waste\.html$ Participant/zerowaste.php [L]
+RewriteRule ^Participant/setting\.html$ Participant/settings.php [L]
+RewriteRule ^Participant/change_password\.php$ Participant/changepassword.php [L]
+RewriteRule ^Participant/privacy_controls\.php$ Participant/privacycontrols.php [L]
+RewriteRule ^Participant/delete_account\.php$ Participant/deleteAccount.php [L]
+RewriteRule ^Participant/helpAndSupport\.html$ Participant/helpandsupport.php [L]
+RewriteRule ^Participant/help_and_support\.php$ Participant/helpandsupport.php [L]
+RewriteRule ^Participant/emailSupport\.html$ Participant/emailsupport.php [L]
+RewriteRule ^Participant/liveChat\.html$ Participant/livechat.php [L]
+RewriteRule ^Participant/appGuidlines\.html$ Participant/appGuildlines.php [L]
+RewriteRule ^Participant/my_qr_code\.php$ Participant/qrcode.php [L]
+RewriteRule ^Participant/reward_history\.php$ Participant/rewardhistory.php [L]
+RewriteRule ^Participant/rewardHistory\.html$ Participant/rewardhistory.php [L]
+RewriteRule ^Participant/earned\.html$ Participant/earned.php [L]
+RewriteRule ^Participant/redeemed\.html$ Participant/redeemed.php [L]
+RewriteRule ^Participant/merchandise\.html$ Participant/merchandise.php [L]
+RewriteRule ^Participant/vouchers\.html$ Participant/vouchers.php [L]
+RewriteRule ^Participant/donations\.php$ Participant/donation.php [L]
+RewriteRule ^Participant/donations\.html$ Participant/donation.php [L]
+
+# Shared JavaScript lives in the root js directory, while role screens refer
+# to it from their own folders.
+RewriteRule ^Guest/(.+\.js)$ js/$1 [L]
+RewriteRule ^GreenReviewer/(.+\.js)$ js/$1 [L]
+RewriteRule ^Participant/(.+\.js)$ js/$1 [L]

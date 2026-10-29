@@ -1,0 +1,266 @@
+.main-content{
+    padding:15px;
+    margin:0;
+    background:#DAE3D9;
+}
+
+.page-title{
+    font-size:35px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#111;
+}
+
+
+.recommend-card{
+    background:#F9FBE7;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:28px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+
+.card-header{
+    background:#BBCBB1;
+    padding:15px;
+    font-size:25px;
+    font-weight:700;
+    border-bottom:2px solid #CFCFCF;
+}
+
+.card-header h2{
+    margin:0;
+    font-size:15px;
+    color:#222;
+    font-weight:700;
+}
+
+
+.card-body{
+    padding:25px;
+}
+
+
+.prediction-grid{
+
+    background:rgb(200, 221, 168);
+    border-radius:18px;
+    padding:15px;
+    font-size:15px;
+
+    display:grid;
+    grid-template-columns:340px 1fr;
+    row-gap:18px;
+    column-gap:40px;
+
+    margin-bottom:25px;
+
+}
+
+.prediction-label{
+
+    font-size:20px;
+    font-weight:700;
+    color:#222;
+    white-space:nowrap;
+
+}
+
+.prediction-value{
+
+    background:#0a541a;
+    color:white;
+
+    padding:10px 30px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+}
+
+
+.center-btn{
+
+    text-align:center;
+
+}
+
+.primary-btn{
+
+    background:#4E944F;
+    color:white;
+
+    border:none;
+
+    padding:14px 38px;
+
+    border-radius:35px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#347C35;
+
+}
+
+
+.recommend-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgb(200, 221, 168);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+.recommend-table th{
+
+    background:#2E7D32;
+
+    color:white;
+
+    padding:16px;
+
+    text-align:center;
+
+    font-size:17px;
+
+    border:1px solid #BFBFBF;
+
+}
+
+.recommend-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border:1px solid #D4D4D4;
+
+    vertical-align:middle;
+
+    line-height:1.6;
+
+}
+
+
+.recommend-table tr:hover{
+
+    background:#d4eea7;
+
+}
+
+
+.simulation-grid{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    row-gap:18px;
+
+    column-gap:25px;
+
+    font-size:20px;
+
+}
+
+.simulation-grid strong{
+
+    color:#222;
+
+}
+
+.simulation-grid div{
+
+    line-height:1.6;
+
+}
+
+
+@media(max-width:1000px){
+
+.prediction-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.simulation-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.recommend-table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+.card-header{
+
+    font-size:24px;
+
+}
+
+.page-title{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.primary-btn{
+
+    width:100%;
+
+}
+
+.prediction-label{
+
+    font-size:18px;
+
+}
+
+.prediction-value{
+
+    font-size:15px;
+
+}
+
+.simulation-grid{
+
+    font-size:16px;
+
+}
+
+.card-body{
+
+    padding:18px;
+
+}
+
+}

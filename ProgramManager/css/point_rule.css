@@ -1,0 +1,469 @@
+.main-content{
+    padding:15px;
+    background:#DAE3D9;
+}
+
+.page-title{
+    font-size:35px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:8px;
+}
+
+
+.point-toolbar{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    margin:0 8px 8px 8px;
+}
+
+.search-box{
+    flex:1;
+    height:35px;
+    display:flex;
+    align-items:center;
+    background:#fff;
+    border-radius:40px;
+    padding:0 20px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+.search-box img{
+    width:20px;
+    height:20px;
+    margin-right:12px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:none;
+}
+
+.point-toolbar select{
+    width:190px;
+    height:35px;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    background:#e7e6e6;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    padding-left:10px;
+    font-size:15px;
+}
+
+.allocation-table th{
+    background:#2E7D32;
+    color:white;
+    padding:15px;
+    font-size:15px;
+    text-align:center;
+}
+
+.allocation-table td{
+    padding:16px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+    text-align:center;
+}
+
+
+.section-title{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+
+.card-header{
+    background:#BBCBB1;
+    padding:15px 20px;
+    margin:-20px -20px 25px -20px;
+
+    display:flex;
+    align-items:center;
+
+    min-height:30px;
+
+    border-radius:20px 20px 0 0;
+}
+
+.card-header img{
+    width:30px;
+    height:30px;
+    flex-shrink:0;
+}
+
+.card-header h2{
+    margin:0;
+    font-size:26px;
+    color:#222;
+}
+
+
+.metric-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.metric-card{
+    background:#ecd6d2;
+    border-radius:15px;
+    padding:22px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.metric-card h3{
+    color:#1a571d;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.metric-card p{
+    margin:8px 0;
+    font-size:15px;
+    color:#444;
+}
+
+
+.table-card{
+    background:#F9FBE7;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:30px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.table-card h2{
+    margin-bottom:18px;
+    color:#222;
+}
+
+
+.allocation-table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgb(200, 221, 168);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.allocation-table th{
+    background:#4E944F;
+    color:white;
+    padding:16px;
+    font-size:16px;
+}
+
+.allocation-table td{
+    padding:16px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+}
+
+.allocation-table tr:hover{
+    background:#d4eea7;
+}
+
+
+.center-btn{
+    text-align:center;
+}
+
+.manage-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#4E944F;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.manage-btn:hover{
+    background:#347C35;
+}
+
+
+@media(max-width:1000px){
+.metric-grid{
+    grid-template-columns:1fr;
+}
+.point-toolbar{
+    flex-direction:column;
+}
+.point-toolbar select{
+    width:100%;
+}
+}
+
+
+.page-title{
+    font-size:32px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:30px;
+}
+
+
+.policy-card{
+    background:#F9FBE7;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.policy-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#C8DDA8;
+    border-radius:15px;
+    padding:15px 25px;
+    margin-bottom:20px;
+}
+
+.policy-header img{
+    width:30px;
+    height:30px;
+    flex-shrink:0;
+}
+
+.policy-header h2{
+    margin:0;
+    font-size:24px;
+    color:#222;
+}
+
+
+.policy-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:20px;
+}
+
+
+.policy-left h3,
+.policy-right h3{
+    margin-bottom:15px;
+    color:#333;
+}
+
+
+.policy-card label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    margin-top:18px;
+    color:#444;
+}
+
+
+.policy-card input,
+.policy-card select{
+    width:100%;
+    padding:12px 16px;
+    border-radius:25px;
+    border:1px solid #C9C9C9;
+    outline:none;
+    background:#ecd6d2;
+    font-size:15px;
+    transition:.3s;
+}
+
+.policy-card input:focus,
+.policy-card select:focus{
+    border-color:#4E944F;
+    box-shadow:0 0 6px rgba(78,148,79,.25);
+}
+
+
+.hint{
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+    color:#777;
+
+    font-size:13px;
+
+    font-style:italic;
+
+}
+
+
+.save-section{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.save-btn{
+
+    margin-top:20px;
+
+    width:30%;
+
+    background:#4E944F;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#347C35;
+
+}
+
+
+.danger-btn{
+
+    margin-top:25px;
+
+    width:30%;
+
+    background:#B63C3C;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.danger-btn:hover{
+
+    background:#8C2222;
+
+}
+
+
+.warning-box{
+
+    background:#FFF3CD;
+
+    border-left:6px solid #F4B400;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-top:18px;
+
+}
+
+.warning-box strong{
+
+    color:#A66A00;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.warning-box p{
+
+    color:#555;
+
+    margin-bottom:5px;
+
+    line-height:1.6;
+
+}
+
+.warning-box label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:10px 0;
+
+    font-weight:500;
+
+}
+
+.warning-box input{
+
+    width:18px;
+    height:18px;
+
+}
+
+.back-btn{
+
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    margin:10px;
+    text-decoration:none;
+    background:#919f8f;
+    padding:10px;
+    border-radius:20px;
+    color:#1d1d1d;
+    font-weight:600;
+    font-size:14px;
+
+}
+
+.back-btn:hover{
+
+    background:#9cb39c;
+
+}
+
+
+@media(max-width:950px){
+
+    .policy-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .save-btn,
+    .danger-btn{
+
+        width:100%;
+
+    }
+
+}
